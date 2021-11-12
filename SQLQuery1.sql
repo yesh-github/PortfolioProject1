@@ -1,5 +1,13 @@
+-- The SARS-CoV-2 virus causes Coronavirus Illness (COVID-19), an infectious disease. The majority of those infected with the virus 
+-- will have mild to moderate respiratory symptoms and will recover without the need for medical attention. Some, on the other hand, 
+-- will get critically unwell and require medical assistance. Serious sickness is more likely to strike the elderly and those with 
+-- underlying medical disorders such as cardiovascular disease, diabetes, chronic respiratory disease, or cancer. COVID-19 may make 
+-- anyone sick and cause them to get very ill or die at any age.
 
-  --Selecting the data that going to be used
+-- The dataset used here is from https://ourworldindata.org/covid-deaths
+  
+  
+  --Selecting the data that is going to be used
 
   SELECT location, date, total_cases, new_cases, total_deaths, population
   FROM PortfolioProject..CovidDeaths
@@ -50,7 +58,7 @@ order by 1,2
  WHERE location = 'World'
  ORDER BY 1,2
 
- --Result almost same
+--Result almost same
 
 --By continent
 
